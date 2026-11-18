@@ -1,8 +1,17 @@
 # AI Self-Healing Incidents with Temporal
 
-A small proof of concept that combines **Temporal** (deterministic, durable workflows) with **AI agents** (non-deterministic reasoning) to handle infrastructure incidents through the **MAPE-K loop**: Monitor → Analyse → Plan → Execute, plus Knowledge. A **human approves** risky actions.
+A small proof of concept that combines **Temporal** (deterministic, durable workflows) with **AI agents** (non-deterministic reasoning) to handle ifrastructure incidents through the **MAPE-K loop**: Monitor → Analyse → Plan → Execute, plus Knowledge. A **human approves** risky actions.
 
 Temporal orchestrates the whole process and keeps its state. The AI is only called for the steps that need judgement: diagnosing the problem and proposing a fix.
+
+**Timeline:** the AI cleans logs, re-plans, waits for human approval, then expands the disk.
+<img width="1449" height="783" alt="timeline" src="https://github.com/user-attachments/assets/8dd65e06-624e-4eb9-ba66-828c116e4013" />
+**Audit trail:** the approval is recorded with who approved it.
+<img width="1464" height="786" alt="history" src="https://github.com/user-attachments/assets/af7730af-7d84-4e40-8d80-9d34d812d281" />
+**Human in the loop:**
+<img width="564" height="80" alt="terminal" src="https://github.com/user-attachments/assets/d8353141-103a-47b9-961e-0a40d7362264" />
+
+
 
 ## How it works
 
