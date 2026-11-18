@@ -1,0 +1,2 @@
+temporalio>=1.7
+openai>=1.0   # only needed if you use a real LLM
